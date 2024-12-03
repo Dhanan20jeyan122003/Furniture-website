@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="cart-container">
+        <h2>1 Item in Cart</h2>
+        <div class="cart-subtotal">Cart Subtotal: <span>₹3,925.00</span></div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+
+        <div class="cart-item">
+            <img src="p5.jpg" alt="World Globe" class="cart-item-image">
+            <div class="cart-item-details">
+                <p class="item-title">Royaloak Decorative World Globe 8 Inches - Gold & Yellow</p>
+                <p class="item-price">₹1,099.00</p>
+                <p class="item-collection">AMERICAN COLLECTION</p>
+                <div class="item-quantity">
+                    <label for="quantity">Qty</label>
+                    <button class="quantity-btn" onclick="decreaseQty()">-</button>
+                    <input type="number" id="quantity" value="4" min="1">
+                    <button class="quantity-btn" onclick="increaseQty()">+</button>
+                    <button class="delete-btn" onclick="removeItem()">🗑</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="view-edit-cart">View and Edit Cart</button>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store</title>
+    <link rel="stylesheet" href="ht.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="ht.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__listlogo"><a href="#">Yash Furniture <i class='fas fa-couch'
+                            style='font-size:36px'></i></a></li>
+                <li class="nav__listitem"><a class="menu" href="#">Home</a></li>
+                <li class="nav__listitem"><a class="menu" href="#">Shop</a>
+                    <ul class="nav__listitemdrop">
+                        <li><a href="#gallery">Furniture</a></li>
+                        <li><a href="#gallery1">Lighting</a></li>
+                        <li><a href="#">Vintage Art</a></li>
+                        <li><a href="#">Decor</a></li>
+                    </ul>
+                </li>
+                <li class="nav__listitem"><a class="menu" href="#">Collections</a>
+                    <ul class="nav__listitemdrop">
+                        <li><a href="#">Mid-Century Modern</a></li>
+                        <li><a href="#">Art Deco</a></li>
+                        <li><a href="#">Rustic & Industrial</a></li>
+                        <li><a href="#">Antique Finds</a></li>
+                        <li><a href="#">Limited Edition</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav__listitem"><a class="menu" href="cart.html">Cart</a></li>
+                <li class="nav__listitem"><a class="menu" href="#about">About Us</a></li>
+                <li class="nav__listitem"><a class="menu" href="#">Blog</a></li>
+                <input class="search" type="text" placeholder="Search...">
+                <li class="nav__listitem"><a class="login" href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        
+
+        <!-- Offer Section -->
+    <div class="offer-section">
+        <h1>Diwali Special Offer!</h1>
+        <p>Hurry up! Grab your favorite furniture at a discounted price before the offer ends!</p>
+        <div class="countdown">
+            <h2>Offer Ends In:</h2>
+            <div id="timer">
+                <div><span id="days"></span>Days</div>
+                <div><span id="hours"></span>Hours</div>
+                <div><span id="minutes"></span>Minutes</div>
+                <div><span id="seconds"></span>Seconds</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add JavaScript for Timer -->
+    <script src="script.js"></script>
+
+        
+        
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="image">
+            <img src="pexels-subham-majumder-1992868-3614082.jpg" width="100%" height="700px" alt="Hero Image">
+        </div>
+        <div class="hero-content">
+            <h1>Discover Beautiful Furniture</h1>
+            <p>High quality furniture for every home and style.</p>
+            <a href="#gallery" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+
+    <h2>Shop By Category</h2>
+    
+    <div class="slider-container">
+        <button class="prev" onclick="moveSlider(-1)">&#10094;</button> <!-- Previous Button -->
+        <div class="slider" id="categorySlider"> <!-- Slider Wrapper -->
+            <div class="category">
+                <img src="l1.jpg" alt="Buddha">
+                <h3>Buddha</h3>
+            </div>
+            <div class="category">
+                <img src="l2.jpg" alt="Artificial Flower">
+                <h3>Artificial Flower</h3>
+            </div>
+            <div class="category">
+                <img src="l3.jpg" alt="Candle Holder">
+                <h3>Candle Holder</h3>
+            </div>
+            <div class="category">
+                <img src="l4.jpg" alt="Candles">
+                <h3>Candles</h3>
+            </div>
+            <div class="category">
+                <img src="l5.jpg" alt="Lightings">
+                <h3>Lightings</h3>
+            </div>
+            <div class="category">
+                <img src="l6.jpg" alt="Mandir">
+                <h3>Mandir</h3>
+            </div>
+            <div class="category">
+                <img src="l7.jpg" alt="Racks">
+                <h3>Mandir</h3>
+            </div>
+            <div class="category">
+                <img src="l8.jpg" alt="Plants">
+                <h3>Mandir</h3>
+            </div>
+        </div>
+        <button class="next" onclick="moveSlider(1)">&#10095;</button> <!-- Next Button -->
+    </div>
+
+    <script src="ht.js"></script> <!-- Link to the JavaScript file -->
+
+     <!-- Gallery Section -->
+     <section id="gallery" class="gallery-section">
+        <h1>Our Furnitures</h1>
+        <div class="gallery-container"></div>
+            
+            <div class="product-container">
+          
+
+                <div class="product">
+                    <img src="p1.jpg" alt="Comfortable Chair" class="product-image">
+                    <h2 class="product-title">Comfortable Chair</h2>
+                    <p class="product-description">A cozy chair with high-quality materials, perfect for your living room.</p>
+                    <p class="product-price">$120</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+        
+                <div class="product">
+                    <img src="p2.jpg" alt="Stylish Sofa" class="product-image">
+                    <h2 class="product-title">Stylish Sofa</h2>
+                    <p class="product-description">Elegant and comfortable sofa, perfect for your living space.</p>
+                    <p class="product-price">$450</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+        
+                <div class="product">
+                    <img src="p3.jpg" alt="Modern Table" class="product-image">
+                    <h2 class="product-title">Modern Table</h2>
+                    <p class="product-description">A sleek modern table for any stylish home.</p>
+                    <p class="product-price">$180</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+        
+                <div class="product">
+                    <img src="p4.jpg" alt="King Size Bed" class="product-image">
+                    <h2 class="product-title">King Size Bed</h2>
+                    <p class="product-description">A luxurious bed that ensures comfort and style in your bedroom.</p>
+                    <p class="product-price">$800</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+        
+                <div class="product">
+                    <img src="p5.jpg" alt="Dining Set" class="product-image">
+                    <h2 class="product-title">Dining Set</h2>
+                    <p class="product-description">A six-seater dining set, ideal for family dinners.</p>
+                    <p class="product-price">$600</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+        
+                <div class="product">
+                    <img src="p6.jpg" alt="Bookshelf" class="product-image">
+                    <h2 class="product-title">Bookshelf</h2>
+                    <p class="product-description">A stylish bookshelf to store your books and decor items.</p>
+                    <p class="product-price">$150</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+        
+                <div class="product">
+                    <img src="p7.jpg" alt="Armchair" class="product-image">
+                    <h2 class="product-title">Armchair</h2>
+                    <p class="product-description">A comfy armchair for relaxing after a long day.</p>
+                    <p class="product-price">$220</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+        
+                <div class="product">
+                    <img src="p8.jpg" alt="Wardrobe" class="product-image">
+                    <h2 class="product-title">Spacious Wardrobe</h2>
+                    <p class="product-description">A large wardrobe with plenty of space for your clothes and accessories.</p>
+                    <p class="product-price">$500</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+        
+                <div class="product">
+                    <img src="p9.jpg" alt="TV Stand" class="product-image">
+                    <h2 class="product-title">Modern TV Stand</h2>
+                    <p class="product-description">A stylish TV stand with storage for all your electronics.</p>
+                    <p class="product-price">$200</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+        
+                <div class="product">
+                    <img src="p10.jpg" alt="Coffee Table" class="product-image">
+                    <h2 class="product-title">Coffee Table</h2>
+                    <p class="product-description">A modern coffee table to complement your living room.</p>
+                    <p class="product-price">$90</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+                <div class="product">
+                
+                    <img src="p12.jpg" alt="ottoman" class="product-image">
+                    <h2 class="product-title">Ottoman</h2>
+                    <p class="product-description">A modern Ottoman to complement your living room.</p>
+                    <p class="product-price">$100</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product">
+                    <img src="p11.jpg" alt="Credenza" class="product-image">
+                    <h2 class="product-title">Credenza</h2>
+                    <p class="product-description">A modern Credenza to complement your House.</p>
+                    <p class="product-price">$50</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+        
+            </div>
+        </div>
+    </section>
+    <!-- Lighting -->
+    <section id="gallery1" class="gallery-section">
+        <h1> Our Lighting</h1>
+        <div class="gallery-container"></div>
+            
+            <div class="product-container">
+          
+
+                <div class="product">
+                    <img src="q1.jpg" alt="Comfortable Chair" class="product-image">
+                    <h2 class="product-title">Industrial Art Hat LED</h2>
+                    <p class="product-description">a stunning addition to your home decor that combines modern style with innovative lighting technology.</p>
+                    <p class="product-price">$120</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+        
+                <div class="product">
+                    <img src="q2.jpg" alt="Stylish Sofa" class="product-image">
+                    <h2 class="product-title">Lampshade</h2>
+                    <p class="product-description"> Embrace Japanese Minimalism and Cloud-Like Elegance </p>
+                    <p class="product-price">$450</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+        
+                <div class="product">
+                    <img src="q3.jpg" alt="Modern Table" class="product-image">
+                    <h2 class="product-title">Rectangular Outdoor Lamp</h2>
+                    <p class="product-description">Its simple and elegant design and durable material can provide bright </p>
+                    <p class="product-price">$180</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+        
+                <div class="product">
+                    <img src="q4.jpg" alt="King Size Bed" class="product-image">
+                    <h2 class="product-title">Mobo Ceramic Wall Lamps</h2>
+                    <p class="product-description">Elegant round shapes add a playful touch to the lamp's</p>
+                    <p class="product-price">$800</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+        
+                <div class="product">
+                    <img src="q5.jpg" alt="Dining Set" class="product-image">
+                    <h2 class="product-title">Melody Ceiling Lamp</h2>
+                    <p class="product-description">This ceiling light is an excellent option to place in the living room</p>
+                    <p class="product-price">$600</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+        
+                <div class="product">
+                    <img src="q6.jpg" alt="Bookshelf" class="product-image">
+                    <h2 class="product-title">Style Pendant Light Living Room</h2>
+                    <p class="product-description">Transform your living room, bedroom, dining room, or kitchen into a haven of warmth and style</p>
+                    <p class="product-price">$150</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+
+    
+    </div>
+          
+</div>
+</div>
+</section>
+    <div class="review-section">
+        <h1 class="section-title">Customer Reviews</h1>
+    </div>
+
+        <div class="review">
+            <div class="review-header">
+                <img src="p5.jpg" alt="John Doe" class="review-image">
+                <div>
+                    <h2 class="reviewer-name">John Doe</h2>
+                    <p class="review-date">August 10, 2024</p>
+                </div>
+            </div>
+            <div class="review-body">
+                <p class="review-text">The sofa I purchased was of great quality! It fits perfectly in my living room, and the material feels very durable. Would highly recommend this store.</p>
+            </div>
+            <div class="review-rating">
+                Rating: ★★★★☆
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-header">
+                <img src="p12.jpg" alt="Jane Smith" class="review-image">
+                <div>
+                    <h2 class="reviewer-name">Jane Smith</h2>
+                    <p class="review-date">September 1, 2024</p>
+                </div>
+            </div>
+            <div class="review-body">
+                <p class="review-text">I bought a dining set from here, and it's perfect for my family! The delivery was fast, and the set was easy to assemble. 5 stars!</p>
+            </div>
+            <div class="review-rating">
+                Rating: ★★★★★
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-header">
+                <img src="p3.jpg" alt="Michael Brown" class="review-image">
+                <div>
+                    <h2 class="reviewer-name">Michael Brown</h2>
+                    <p class="review-date">September 15, 2024</p>
+                </div>
+            </div>
+            <div class="review-body">
+                <p class="review-text">The coffee table is stylish, but I found a small scratch on the surface upon delivery. Customer service was helpful and resolved the issue quickly.</p>
+            </div>
+            <div class="review-rating">
+                Rating: ★★★★☆
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-header">
+                <img src="p2.jpg" alt="Sarah Connor" class="review-image">
+                <div>
+                    <h2 class="reviewer-name">Sarah Connor</h2>
+                    <p class="review-date">October 5, 2024</p>
+                </div>
+            </div>
+            <div class="review-body">
+                <p class="review-text">The king-size bed is amazing! It’s very comfortable, and the wooden frame is strong and beautiful. I will definitely shop here again.</p>
+            </div>
+            <div class="review-rating">
+                Rating: ★★★★★
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-header">
+                <img src="p7.jpg" alt="David Lee" class="review-image">
+                <div>
+                    <h2 class="reviewer-name">David Lee</h2>
+                    <p class="review-date">October 12, 2024</p>
+                </div>
+            </div>
+            <div class="review-body">
+                <p class="review-text">The bookshelf I ordered fits perfectly in my study. Great quality, easy to assemble, and looks very elegant. Happy with the purchase!</p>
+            </div>
+            <div class="review-rating">
+                Rating: ★★★★☆
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>We bring you the finest furniture crafted with perfection and love, bringing beauty and elegance to your
+            spaces.</p>
+    </section>
+
+    
+
+
+
+   
+
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="newsletter">
+                <h2>SUBSCRIBE TO NEWSLETTER</h2>
+                <p>Be the first to know about new arrivals, sales & promos by submitting your email!</p>
+                <form>
+                    <input type="email" placeholder="Please enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>QUICK LINKS</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Yash Stores</a></li>
+                        <li><a href="#">Media</a></li>
+                        <li><a href="#">Share Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>SERVICES</h3>
+                    <ul>
+                        <li><a href="#">Dismantling Service</a></li>
+                        <li><a href="#">Re-Installation</a></li>
+                        <li><a href="#">Loose Fitting</a></li>
+                        <li><a href="#">Complaints</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>CORPORATE INFO</h3>
+                    <ul>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Become A Franchise</a></li>
+                        <li><a href="#">Rent Your Property</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>ROYALOAK</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Sell With Royaloak</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>MY ACCOUNT</h3>
+                    <ul>
+                        <li><a href="#">My Cart</a></li>
+                        <li><a href="#">My Orders</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>SOCIAL ACCOUNTS</h3>
+                    <div class="social-icons">
+                        <a href="#"><img src="d1.jpg" alt="Facebook"></a>
+                        <a href="#"><img src="d2.jpg" alt="Instagram"></a>
+                        <a href="#"><img src="d3.png" alt="YouTube"></a>
+                        <a href="#"><img src="d4.png" alt="LinkedIn"></a>
+                    </div>
+                    <p>PAY USING</p>
+                    <div class="payment-icons">
+                        <img src="pd1.png" alt="Visa">
+                        <img src="pd2.png" alt="MasterCard">
+                        <img src="pd3.jpg" alt="PayPal">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="info-icons">
+                    <div class="info-item">
+                        <img src="o1.jpg" alt="Free Delivery">
+                        <p>FREE DELIVERY<br>When ordering from Rs. 2500</p>
+                    </div>
+                    <div class="info-item">
+                        <img src="o2.png" alt="Easy Returns">
+                        <p>EASY RETURNS<br>If goods have problems</p>
+                    </div>
+                    <div class="info-item">
+                        <img src="o3.jpg" alt="Secure Payment">
+                        <p>SECURE PAYMENT<br>100% secure payment</p>
+                    </div>
+                    <div class="info-item">
+                        <img src="o5.png" alt="Support">
+                        <p>9 AM TO 6:30 PM | 7 DAYS<br>Dedicated support</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <p>© 2024, Yash Furnitures | All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | <a href="#">Cancellation Policies</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
